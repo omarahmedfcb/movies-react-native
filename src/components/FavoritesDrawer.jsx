@@ -25,7 +25,7 @@ export default function FavoritesDrawer({ navigation }) {
     async (movieId) => {
       try {
         await removeFavorite(movieId);
-        refreshFavorites(); // This updates the context
+        refreshFavorites();
         Toast.show({
           type: 'info',
           text1: 'Removed from favorites',
